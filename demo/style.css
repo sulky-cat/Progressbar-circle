@@ -110,7 +110,6 @@ body {
       D = 2Пr
       total_gap_size = gap_qty * gap_size
       dasharray = (D - total_gap_size) / number of serifs
-
    */
    stroke-dasharray: 45.1 2;
    stroke-dashoffset: -1;
@@ -130,12 +129,10 @@ body {
    stop-color: red;
 }
 #ex9 linearGradient#grad stop:first-child {
-   offset: 0%;
    stop-color: #53034f;
 }
 #ex9 linearGradient#grad stop:last-child {
    stop-color: #3273ff;
-   offset: 100%;
 }
 /* ===== */
 #ex10 circle {

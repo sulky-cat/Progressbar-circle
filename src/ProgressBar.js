@@ -23,7 +23,7 @@ export default class ProgressBar {
          },
       },
       text: {
-         formatText: function (cur) { return `${cur}` }
+         formatText: (current) => `${current}`
       },
    }
    // Constructor
@@ -55,7 +55,7 @@ export default class ProgressBar {
       // Angle progress
       this.angle = +this.renderElement.dataset.angle || this.options.angle
       // Text in circle
-      this.generateText = this.renderElement.hasAttribute('data-generate-text') || this.options.text
+      this.generateText = !!this.options.text
       // Play animation immediately or by trigger
       this.trigger = this.options.animation?.trigger
       // Duration animation
@@ -137,8 +137,7 @@ export default class ProgressBar {
          ),
       })
       // Set text
-      if (this.generateText)
-         this.setText(Math.round(current))
+      this.setText(Math.round(current))
       // // Calling a function CB
       if (cb)
          cb(current)
@@ -164,7 +163,8 @@ export default class ProgressBar {
    }
    // Set text in tag text
    setText(current) {
-      this.text.innerHTML = this.funcFormatText(current)
+      if (this.generateText)
+         this.text.innerHTML = this.funcFormatText(current)
    }
    // Get radius
    getRadius() {

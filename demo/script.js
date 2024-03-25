@@ -60,9 +60,7 @@ new ProgressBar(ex_5_render, {
 })
 // Example 6 Анимация по триггеру
 const ex_6_render = document.querySelector('.ex-6')
-document.querySelector('.section_button_ex-6').onclick = () => {
-   ex_6.animation({})
-}
+document.querySelector('.section_button_ex-6').onclick = () => ex_6.animation({})
 const ex_6 = new ProgressBar(ex_6_render, {
    current: 45,
    animation: { trigger: true }
@@ -92,9 +90,7 @@ const ex_9 = new ProgressBar(ex_9_render, {
    max: 30,
    current: 27,
    text: {
-      formatText: (cur) => {
-         return `${cur}/${ex_9.max}`
-      }
+      formatText: (cur) => `${cur}/${ex_9.max}`
    }
 })
 ex_9.svg.insertAdjacentHTML('beforeend', `
