@@ -1,0 +1,146 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   font-size: 18px;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   padding-top: 30px;
+}
+.title {
+   text-align: center;
+   font-size: 30px;
+   margin-bottom: 50px;
+}
+.container {
+   max-width: 600px;
+   margin: 0 auto;
+}
+.section {
+   padding: 20px;
+   border-radius: 5px;
+   background-color: #f7f7f7;
+}
+.section:not(:last-child) {
+   margin-bottom: 50px;
+}
+.section__title:not(:last-child) {
+   margin-bottom: 30px;
+}
+.section__progress-bar {
+   max-width: 300px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.section__progress-bar:not(:last-child) {
+   margin-bottom: 30px;
+}
+.section_button {
+   padding: 10px 30px;
+   outline: none;
+   border-radius: 3px;
+   border: none;
+   background-color: #3273ff;
+   color: #fff;
+   font-size: 20px;
+   font-weight: 700;
+   transition: background-color 0.2s ease-in-out 0s;
+   cursor: pointer;
+   margin-bottom: 20px;
+}
+.section_button:hover {
+   background-color: #53034f;
+}
+.test {
+   margin-bottom: 20px;
+}
+.progress-bar svg:not(:last-child) {
+   margin-bottom: 20px;
+}
+
+/* ===== */
+#ex2 circle {
+   stroke-width: 10px;
+}
+#ex2 path {
+   stroke-width: 10px;
+   stroke-linecap: round;
+}
+/* ===== */
+#ex3 circle {
+   stroke-width: 4px;
+}
+#ex3 path {
+   stroke-width: 10px;
+}
+/* ===== */
+#ex4 circle {
+   stroke-width: 20px;
+   fill: #cecece;
+}
+#ex4 path {
+   stroke-width: 50px;
+}
+/* ===== */
+#ex5 circle {
+   stroke-width: 50px;
+}
+#ex5 path {
+   stroke-width: 50px;
+}
+/* ===== */
+#ex6 circle {
+   stroke-width: 30px;
+   stroke: #f7f7f7;
+   fill: #3273ff;
+}
+#ex6 path {
+   stroke-width: 8px;
+}
+#ex6 text {
+   fill: #fcfcfc;
+}
+/* ===== */
+#ex7 circle {
+}
+#ex7 path {
+   /* 
+      r = 50 - stroke-width / 2
+      D = 2Пr
+      total_gap_size = gap_qty * gap_size
+      dasharray = (D - total_gap_size) / number of serifs
+
+   */
+   stroke-dasharray: 45.1 2;
+   stroke-dashoffset: -1;
+}
+/* ===== */
+#ex8 circle {
+}
+#ex8 path {
+   stroke-dasharray: 0 13.45;
+   stroke-linecap: round;
+}
+/* ===== */
+#ex9 path {
+   stroke: url("#grad");
+}
+#ex9 linearGradient#grad {
+   stop-color: red;
+}
+#ex9 linearGradient#grad stop:first-child {
+   offset: 0%;
+   stop-color: #53034f;
+}
+#ex9 linearGradient#grad stop:last-child {
+   stop-color: #3273ff;
+   offset: 100%;
+}
+/* ===== */
+#ex10 circle {
+   stroke-width: 10px;
+}
+#ex10 path {
+   stroke-width: 8px;
+}

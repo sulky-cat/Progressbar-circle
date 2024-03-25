@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../src/progressBar.css">
+   <link rel="stylesheet" href="style.css">
+   <title>Demo progress bar</title>
+</head>
+
+<body>
+
+   <div class="container">
+      <h1 class="title">Примеры</h1>
+      <section id="ex1" class="section">
+         <h2 class="section__title">Стандартное поведените</h2>
+         <div class="section__progress-bar progress-bar ex-1"></div>
+      </section>
+      <section id="ex2" class="section">
+         <h2 class="section__title">Без анимации</h2>
+         <div data-current="35" class="section__progress-bar progress-bar ex-2"></div>
+      </section>
+      <section id="ex3" class="section">
+         <h2 class="section__title">Без цифр</h2>
+         <div class="section__progress-bar progress-bar ex-3"></div>
+      </section>
+      <section id="ex4" class="section">
+         <h2 class="section__title">Отрицательный диапазон</h2>
+         <div data-min="-50" data-max="30" data-current="7" class="section__progress-bar progress-bar ex-4"></div>
+      </section>
+      <section id="ex5" class="section">
+         <h2 class="section__title">Другие настрйоки анимации</h2>
+         <div class="section__progress-bar progress-bar ex-5"></div>
+      </section>
+      <section id="ex6" class="section">
+         <h2 class="section__title">Анимация по триггеру</h2>
+         <button class="section_button section_button_ex-6">Нажми на меня</button>
+         <div class="section__progress-bar progress-bar ex-6"></div>
+      </section>
+      <section id="ex7" class="section">
+         <h2 class="section__title">Другой угол начала + направление (js)</h2>
+         <div class="section__progress-bar progress-bar ex-7"></div>
+      </section>
+      <section id="ex8" class="section">
+         <h2 class="section__title">Другой угол начала + направление (html)</h2>
+         <div data-max="10" data-current="10" data-angle="180" data-clockwise="false" class="section__progress-bar progress-bar ex-8"></div>
+      </section>
+      <section id="ex9" class="section">
+         <h2 class="section__title">Форматирование текста</h2>
+         <div class="section__progress-bar progress-bar ex-9"></div>
+      </section>
+      <section id="ex10" class="section">
+         <h2 class="section__title">Метод анимации возвращает промис</h2>
+         <div class="section__progress-bar progress-bar ex-10"></div>
+      </section>
+   </div>
+
+   <script type="module" src="script.js"></script>
+</body>
+
+</html>

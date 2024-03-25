@@ -1,0 +1,20 @@
+.progress-bar-svg {
+   width: 100%;
+   height: 100%;
+   aspect-ratio: 1/1;
+}
+.progress-bar-svg circle {
+   fill: none;
+   stroke: #cecece;
+   stroke-width: 10;
+}
+.progress-bar-svg path {
+   fill: none;
+   stroke: #3273ff;
+   stroke-width: 10;
+}
+.progress-bar-svg text {
+   display: block;
+   font-size: 24px;
+   fill: #000;
+}
