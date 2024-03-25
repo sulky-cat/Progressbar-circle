@@ -117,5 +117,5 @@ ex_10.animation({
    current: 3,
    duration: 1000,
 }).then(() => {
-   ex_10.renderElement.insertAdjacentHTML('beforeend', '<p>Конец выполнения</p>')
+   ex_10.renderElement.insertAdjacentHTML('afterbegin', '<p>Конец выполнения</p>')
 })

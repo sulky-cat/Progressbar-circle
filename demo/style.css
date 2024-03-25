@@ -144,3 +144,6 @@ body {
 #ex10 path {
    stroke-width: 8px;
 }
+#ex10 p:not(:last-child) {
+   margin-bottom: 15px;
+}
