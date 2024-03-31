@@ -2,7 +2,7 @@
 
 [Демо страница](https://sulky-cat.github.io/Progressbar-circle/demo/)
 
-<img width="300" alt="circle demo" src="./circle.png">
+<img align="middle" alt="circle demo" src="./circle.png">
 
 ## Содержание
 - [html](#html)
