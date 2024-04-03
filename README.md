@@ -94,19 +94,19 @@ ProgressBar.defaultOptions
 4) `setText(current)` - метод для установки значения внутри тега `text`, применяя форматирование, которое было указано в свойстве `text.formatText`.
 
 ### Примеры скриптов
-#### 1) Выключение анимации [пример](https://sulky-cat.github.io/Progressbar-circle/demo//#ex2) 
+#### 1) Выключение анимации [пример](https://sulky-cat.github.io/Progressbar-circle/demo/#ex2) 
 ```js
 new ProgressBar(element, {
    animation: false,
 })
 ```
-#### 2) Выключение цифр [пример](https://sulky-cat.github.io/Progressbar-circle/demo//#ex2) 
+#### 2) Выключение цифр [пример](https://sulky-cat.github.io/Progressbar-circle/demo/#ex2) 
 ```js
 new ProgressBar(element, {
    text: false,
 })
 ```
-#### 3) Настройка анимации [пример](https://sulky-cat.github.io/Progressbar-circle/demo//#ex5) 
+#### 3) Настройка анимации [пример](https://sulky-cat.github.io/Progressbar-circle/demo/#ex5) 
 ```js
 // Элемент, в котором будет выводиться текущее значениме
 const anotherOutput  = document.querySelector('.another-output')
@@ -126,7 +126,7 @@ new ProgressBar(element, {
    }
 })
 ```
-#### 4) Анимация по триггеру [пример](https://sulky-cat.github.io/Progressbar-circle/demo//#ex6) 
+#### 4) Анимация по триггеру [пример](https://sulky-cat.github.io/Progressbar-circle/demo/#ex6) 
 ```js
 const btn = document.querySelector('.btn')
 btn.onclick = () => ex_6.animation({})
@@ -134,7 +134,7 @@ const progressBar = new ProgressBar(element, {
    animation: { trigger: true }
 })
 ```
-#### 5) Форматирование текста [пример](https://sulky-cat.github.io/Progressbar-circle/demo//#ex9) 
+#### 5) Форматирование текста [пример](https://sulky-cat.github.io/Progressbar-circle/demo/#ex9) 
 ```js
 const progressBar = new ProgressBar(element, {
     text: {
@@ -142,7 +142,7 @@ const progressBar = new ProgressBar(element, {
    }
 })
 ```
-#### 6) Ожидание выполнения анимации [пример](https://sulky-cat.github.io/Progressbar-circle/demo//#ex10) 
+#### 6) Ожидание выполнения анимации [пример](https://sulky-cat.github.io/Progressbar-circle/demo/#ex10) 
 Метод `animation()` возвращает `Promise`, что дает возможность дождаться выполнения анимации. Чтобы воспользоваться этим, необходимо вызвать метод `animation()` вручную, для чего нужно указать параметр `trigger` для `animation`.
 ```js
 const progressBar = new ProgressBar(element, {
@@ -200,13 +200,13 @@ setTimeout(() => {
 Элементу `svg` присваивается класс `progress-bar-svg`, по которому можно стилизовать весь прогресс-бар. 
 
 ### Примеры стилизации из [демо страница](https://sulky-cat.github.io/Progressbar-circle/demo/)
-[Пример №2](https://sulky-cat.github.io/Progressbar-circle/demo//#ex2)
+[Пример №2](https://sulky-cat.github.io/Progressbar-circle/demo/#ex2)
 ```css
 .progress-bar-svg path {
    stroke-linecap: round;
 }
 ```
-[Пример №3](https://sulky-cat.github.io/Progressbar-circle/demo//#ex3)
+[Пример №3](https://sulky-cat.github.io/Progressbar-circle/demo/#ex3)
 ```css
 .progress-bar-svg circle {
    stroke-width: 4px;
@@ -215,7 +215,7 @@ setTimeout(() => {
    stroke-width: 10px;
 }
 ```
-[Пример №4](https://sulky-cat.github.io/Progressbar-circle/demo//#ex4)
+[Пример №4](https://sulky-cat.github.io/Progressbar-circle/demo/#ex4)
 ```css
 .progress-bar-svg circle {
    stroke-width: 20px;
@@ -224,7 +224,7 @@ setTimeout(() => {
    stroke-width: 50px;
 }
 ```
-[Пример №5](https://sulky-cat.github.io/Progressbar-circle/demo//#ex5)
+[Пример №5](https://sulky-cat.github.io/Progressbar-circle/demo/#ex5)
 ```css
 .progress-bar-svg circle {
    stroke-width: 50px;
@@ -233,7 +233,7 @@ setTimeout(() => {
    stroke-width: 50px;
 }
 ```
-[Пример №6](https://sulky-cat.github.io/Progressbar-circle/demo//#ex6)
+[Пример №6](https://sulky-cat.github.io/Progressbar-circle/demo/#ex6)
 ```css
 .progress-bar-svg circle {
    stroke-width: 30px;
@@ -244,7 +244,7 @@ setTimeout(() => {
    stroke-width: 8px;
 }
 ```
-[Пример №7](https://sulky-cat.github.io/Progressbar-circle/demo//#ex7)
+[Пример №7](https://sulky-cat.github.io/Progressbar-circle/demo/#ex7)
 ```css
 .progress-bar-svg path {
    stroke-dasharray: 45.1 2;
@@ -265,14 +265,14 @@ setTimeout(() => {
    * `gap_qty` - количество отступов (равно максимальному значению прогресс-бара),
    * `gap_size` - размер отступа.
 
-[Пример №8](https://sulky-cat.github.io/Progressbar-circle/demo//#ex8)
+[Пример №8](https://sulky-cat.github.io/Progressbar-circle/demo/#ex8)
 ```css
 .progress-bar-svg path {
    stroke-dasharray: 0 13.45;
    stroke-linecap: round;
 }
 ```
-[Пример №9](https://sulky-cat.github.io/Progressbar-circle/demo//#ex9)
+[Пример №9](https://sulky-cat.github.io/Progressbar-circle/demo/#ex9)
 Для того, чтобы сделать градиент, нужно добавить элемент с градиентом внутрь элемента svg: 
 ```js
 progressBar.svg.insertAdjacentHTML('beforeend', `
@@ -296,7 +296,7 @@ progressBar.svg.insertAdjacentHTML('beforeend', `
    stop-color: #3273ff;
 }
 ```
-[Пример №10](https://sulky-cat.github.io/Progressbar-circle/demo//#ex10)
+[Пример №10](https://sulky-cat.github.io/Progressbar-circle/demo/#ex10)
 ```css
 .progress-bar-svg circle {
    stroke-width: 10px;
