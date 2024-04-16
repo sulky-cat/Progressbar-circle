@@ -145,16 +145,13 @@ export default class ProgressBar {
    }
    // Animation
    animation({ current = this.current, duration = this.duration, cb = this.cb, timeFunc = this.timeFunc }) {
-         // Start of counting
-         const start = new Date()
-         // End of countdown
-         const end = new Date().getTime() + duration
-         // Update
-         return Timer.start(time => {
-            this.step = timeFunc(time, current, duration, this.min)
-            this.setProgress(this.step, cb)
-         }, duration)
-      })
+      const start = new Date()
+      const end = new Date().getTime() + duration
+      // Update
+      return Timer.start(time => {
+         this.step = timeFunc(time, current, duration, this.min)
+          this.setProgress(this.step, cb)
+      }, duration)
    }
    // Set text in tag text
    setText(current) {
