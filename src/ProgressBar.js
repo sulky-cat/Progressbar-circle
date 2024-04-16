@@ -1,3 +1,4 @@
+import Timer from "./Timer.js"
 export default class ProgressBar {
    // Radius circle
    #radius = 50
