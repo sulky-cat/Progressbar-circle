@@ -150,15 +150,10 @@ export default class ProgressBar {
          // End of countdown
          const end = new Date().getTime() + duration
          // Update
-         const update = () => {
-            const time = Math.min(Date.now(), end) - start
+         Timer.start(time => {
             this.step = timeFunc(time, current, duration, this.min)
-
             this.setProgress(this.step, cb)
-            if (time < duration) requestAnimationFrame(update)
-            else resolve()
-         }
-         requestAnimationFrame(update)
+         }, duration)
       })
    }
    // Set text in tag text
