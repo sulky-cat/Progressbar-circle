@@ -148,10 +148,13 @@ export default class ProgressBar {
       const start = new Date()
       const end = new Date().getTime() + duration
       // Update
-      return Timer.start(time => {
-         this.step = timeFunc(time, current, duration, this.min)
-          this.setProgress(this.step, cb)
-      }, duration)
+      return Timer.start({
+         func:time => {
+            this.step = timeFunc(time, current, duration, this.min)
+            this.setProgress(this.step, cb)
+         }, 
+         duration
+      })
    }
    // Set text in tag text
    setText(current) {
